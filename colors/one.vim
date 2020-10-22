@@ -1,4 +1,4 @@
-" Name:    one vim colorscheme
+
 " Author:  Ramzi Akremi
 " License: MIT
 " Version: 1.1.1-pre
@@ -294,12 +294,12 @@ if has('gui_running') || has('termguicolors') || &t_Co == 88 || &t_Co == 256
     let s:dark = 1
     let s:mono_1 = ['#abb2bf', '145']
     let s:mono_2 = ['#828997', '102']
-    let s:mono_3 = ['#5c6370', '59']
-    let s:mono_4 = ['#4b5263', '59']
+    let s:mono_3 = ['#7c8390', '70'] " 5c6370
+    let s:mono_4 = ['#4b5263', '59'] " 4b5263
 
     let s:hue_1  = ['#56b6c2', '73'] " cyan
     let s:hue_2  = ['#61afef', '75'] " blue
-    let s:hue_3  = ['#c678dd', '176'] " purple
+    let s:hue_3  = ['#b668dd', '78'] " purple c678dd
     let s:hue_4  = ['#98c379', '114'] " green
 
     let s:hue_5   = ['#e06c75', '168'] " red 1
@@ -382,7 +382,7 @@ if has('gui_running') || has('termguicolors') || &t_Co == 88 || &t_Co == 256
   call <sid>X('PMenuThumb',   '',              s:mono_1,         '')
   call <sid>X('Question',     s:hue_2,         '',               '')
   call <sid>X('Search',       s:syntax_bg,     s:hue_6_2,        '')
-  call <sid>X('SpecialKey',   s:special_grey,  '',               'none')
+  call <sid>X('SpecialKey',   s:special_grey,  '',               'underline')
   call <sid>X('Whitespace',   s:special_grey,  '',               'none')
   call <sid>X('StatusLine',   s:syntax_fg,     s:syntax_cursor,  'none')
   call <sid>X('StatusLineNC', s:mono_3,        '',               '')
@@ -410,17 +410,17 @@ if has('gui_running') || has('termguicolors') || &t_Co == 88 || &t_Co == 256
   call <sid>X('Comment',        s:mono_3,        '',          s:italic)
   call <sid>X('Constant',       s:hue_4,         '',          '')
   call <sid>X('String',         s:hue_4,         '',          '')
-  call <sid>X('Character',      s:hue_4,         '',          '')
+  call <sid>X('Character',      s:hue_4,         '',          'underline')
   call <sid>X('Number',         s:hue_6,         '',          '')
   call <sid>X('Boolean',        s:hue_6,         '',          '')
   call <sid>X('Float',          s:hue_6,         '',          '')
   call <sid>X('Identifier',     s:hue_5,         '',          'none')
   call <sid>X('Function',       s:hue_2,         '',          '')
-  call <sid>X('Statement',      s:hue_3,         '',          'none')
+  call <sid>X('Statement',      s:hue_3,         '',          'bold')
   call <sid>X('Conditional',    s:hue_3,         '',          '')
   call <sid>X('Repeat',         s:hue_3,         '',          '')
   call <sid>X('Label',          s:hue_3,         '',          '')
-  call <sid>X('Operator',       s:syntax_accent, '',          'none')
+  call <sid>X('Operator',       s:syntax_accent, '',          '')
   call <sid>X('Keyword',        s:hue_5,         '',          '')
   call <sid>X('Exception',      s:hue_3,         '',          '')
   call <sid>X('PreProc',        s:hue_6_2,       '',          '')
@@ -435,7 +435,7 @@ if has('gui_running') || has('termguicolors') || &t_Co == 88 || &t_Co == 256
   call <sid>X('Special',        s:hue_2,         '',          '')
   call <sid>X('SpecialChar',    '',              '',          '')
   call <sid>X('Tag',            '',              '',          '')
-  call <sid>X('Delimiter',      '',              '',          '')
+  call <sid>X('Delimiter',      s:mono_1,        '',          '')
   call <sid>X('SpecialComment', '',              '',          '')
   call <sid>X('Debug',          '',              '',          '')
   call <sid>X('Underlined',     '',              '',          'underline')
