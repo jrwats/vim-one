@@ -3,7 +3,7 @@
 " License: MIT
 " Version: 1.1.1-pre
 
-" Global setup =============================================================={{{{{{
+" Global setup =============================================================={{{
 
 if exists("*<SID>X")
   delf <SID>X
@@ -382,7 +382,7 @@ if has('gui_running') || has('termguicolors') || &t_Co == 88 || &t_Co == 256
   call <sid>X('PMenuThumb',   '',              s:mono_1,         '')
   call <sid>X('Question',     s:hue_2,         '',               '')
   call <sid>X('Search',       s:syntax_bg,     s:hue_6_2,        '')
-  call <sid>X('SpecialKey',   s:special_grey,  '',               'underline')
+  call <sid>X('SpecialKey',   s:special_grey,  '',               'none')
   call <sid>X('Whitespace',   s:special_grey,  '',               'none')
   call <sid>X('StatusLine',   s:syntax_fg,     s:syntax_cursor,  'none')
   call <sid>X('StatusLineNC', s:mono_3,        '',               '')
@@ -410,7 +410,7 @@ if has('gui_running') || has('termguicolors') || &t_Co == 88 || &t_Co == 256
   call <sid>X('Comment',        s:mono_3,        '',          s:italic)
   call <sid>X('Constant',       s:hue_4,         '',          '')
   call <sid>X('String',         s:hue_4,         '',          '')
-  call <sid>X('Character',      s:hue_4,         '',          'underline')
+  call <sid>X('Character',      s:hue_4,         '',          'none')
   call <sid>X('Number',         s:hue_6,         '',          '')
   call <sid>X('Boolean',        s:hue_6,         '',          '')
   call <sid>X('Float',          s:hue_6,         '',          '')
@@ -420,7 +420,7 @@ if has('gui_running') || has('termguicolors') || &t_Co == 88 || &t_Co == 256
   call <sid>X('Conditional',    s:hue_3,         '',          '')
   call <sid>X('Repeat',         s:hue_3,         '',          '')
   call <sid>X('Label',          s:hue_3,         '',          '')
-  call <sid>X('Operator',       s:syntax_accent, '',          '')
+  call <sid>X('Operator',       s:syntax_accent, '',          'none')
   call <sid>X('Keyword',        s:hue_5,         '',          '')
   call <sid>X('Exception',      s:hue_3,         '',          '')
   call <sid>X('PreProc',        s:hue_6_2,       '',          '')
@@ -890,4 +890,4 @@ if exists('s:dark') && s:dark
   set background=dark
 endif
 
-" vim: set fdl=0 fdm=marker:}}}
+" vim: set fdl=0 fdm=marker:
