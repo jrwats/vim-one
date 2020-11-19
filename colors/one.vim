@@ -318,7 +318,7 @@ if has('gui_running') || has('termguicolors') || &t_Co == 88 || &t_Co == 256
     let s:vertsplit    = ['#181a1f', '233']
     let s:special_grey = ['#3b4048', '16']
     let s:visual_grey  = ['#3e4452', '17']
-    let s:pmenu        = ['#333841', '16']
+    let s:pmenu        = ['#232831', '16'] "#333841
   else
     let s:mono_1 = ['#494b53', '23']
     let s:mono_2 = ['#696c77', '60']
