@@ -294,8 +294,8 @@ if has('gui_running') || has('termguicolors') || &t_Co == 88 || &t_Co == 256
     let s:dark = 1
     let s:mono_1 = ['#abb2bf', '145']
     let s:mono_2 = ['#828997', '102']
-    let s:mono_3 = ['#5c6370', '70'] " 5c6370
-    let s:mono_4 = ['#363a40', '59'] " 4b5263
+    let s:mono_3 = ['#6f7a84', '70'] " 5c6370
+    let s:mono_4 = ['#364850', '59'] " 4b5263
 
     let s:hue_1  = ['#56b6c2', '73'] " cyan
     let s:hue_2  = ['#61afef', '75'] " blue
@@ -309,12 +309,13 @@ if has('gui_running') || has('termguicolors') || &t_Co == 88 || &t_Co == 256
     let s:hue_6_2 = ['#e5c07b', '180'] " orange 2
 
     let s:syntax_bg      = ['#141826', '16']
-    let s:syntax_fold_bg = ['#2c2d36', '16']
+    let s:syntax_fold_bg = ['#242636', '16']
     let s:syntax_gutter  = ['#636d83', '60']
     let s:syntax_cursor  = ['#261a32', '16']
 
     let s:syntax_accent = ['#528bff', '69']
 
+    let s:linenr       = ['#4a506a', '233']
     let s:vertsplit    = ['#181a1f', '233']
     let s:special_grey = ['#3b4048', '16']
     let s:visual_grey  = ['#3e4452', '17']
@@ -344,6 +345,7 @@ if has('gui_running') || has('termguicolors') || &t_Co == 88 || &t_Co == 256
     let s:syntax_accent = ['#526fff', '63']
     let s:syntax_accent_2 = ['#0083be', '31']
 
+    let s:linenr       = ['#a0b0c0', '233']
     let s:vertsplit    = ['#e7e9e1', '188']
     let s:special_grey = ['#d3d3d3', '251']
     let s:visual_grey  = ['#d0d0d0', '251']
@@ -369,7 +371,7 @@ if has('gui_running') || has('termguicolors') || &t_Co == 88 || &t_Co == 256
   call <sid>X('Folded',       s:syntax_fg,     s:syntax_fold_bg, 'none')
   call <sid>X('FoldColumn',   s:mono_3,        s:syntax_cursor,  '')
   call <sid>X('IncSearch',    s:hue_6,         '',               '')
-  call <sid>X('LineNr',       s:mono_4,        '',               '')
+  call <sid>X('LineNr',       s:linenr,        '',               '')
   call <sid>X('CursorLineNr', s:syntax_fg,     s:syntax_cursor,  'none')
   call <sid>X('MatchParen',   s:hue_5,         s:syntax_cursor,  'underline,bold')
   call <sid>X('Italic',       '',              '',               s:italic)
